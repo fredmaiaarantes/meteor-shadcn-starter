@@ -1,0 +1,15 @@
+{
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "runtime": "automatic"  // Enables automatic JSX runtime for React
+        }
+      ],
+      ["module-resolver", {
+        "root": ["./"],
+          "alias": { "@": "./src/ui" }
+        }
+      ]
+    ]
+  }
