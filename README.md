@@ -81,14 +81,6 @@ src/
   - Error handling
   - Toast notifications
 
-## 🛠️ Tech Stack
-
-- Meteor 3
-- React 18
-- TypeScript
-- shadcn/ui 
-- Tailwind CSS
-
 ## 📚 Documentation Links
 
 - [Meteor Docs](https://docs.meteor.com)
