@@ -83,12 +83,11 @@ src/
 
 ## 🛠️ Tech Stack
 
-- Meteor 3.0.4
+- Meteor 3
 - React 18
 - TypeScript
-- shadcn/ui 2.1.1
+- shadcn/ui 
 - Tailwind CSS
-- Radix UI Primitives
 
 ## 📚 Documentation Links
 
