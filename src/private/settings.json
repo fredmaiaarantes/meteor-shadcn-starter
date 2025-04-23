@@ -1,0 +1,15 @@
+{
+    "public": {
+      "appInfo": {
+        "name": "Meteor Shadcn Starter"
+      }
+    },
+    "packages": {
+      "mongo": {
+        "options": {
+          "tlsAllowInvalidCertificates": true
+        }
+      }
+    }
+  }
+  

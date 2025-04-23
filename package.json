@@ -2,7 +2,8 @@
   "name": "meteor-shadcn-starter",
   "private": true,
   "scripts": {
-    "start": "meteor run",
+    "start": "meteor --exclude-archs web.browser.legacy,web.cordova --settings src/private/settings.json --port 3010",
+    "deploy": "meteor deploy --settings src/private/settings.json --exclude-archs \"web.browser.legacy, web.cordova\" meteorshadcn.meteorapp.com --free --mongodb",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer",
@@ -13,6 +14,7 @@
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-scroll-area": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.5",
     "class-variance-authority": "^0.7.1",
@@ -40,9 +42,8 @@
   },
   "meteor": {
     "mainModule": {
-      "client": "src/ui/main.tsx",
-      "server": "src/api/main.ts"
-    },
-    "testModule": "src/tests/main.ts"
+      "client": "src/ui/main.jsx",
+      "server": "src/api/main.js"
+    }
   }
 }
